@@ -22,12 +22,12 @@ with open(election_csv) as csv_file:
         votes = row[0]
         candidate_name = row[2] #row2
         # Get list of candidate name
-        for candidate in candidate_name:
-            if candidate_name not in candidates:
-                candidates.append(candidate_name)
+        #for candidate in candidate_name:
+        if candidate_name not in candidates:
+            candidates.append(candidate_name)
         # Get count of votes each candidate received   
-        for candidate in candidate_name:
-            candidate_votes.append(candidate_name.count(candidate))     
+        #for candidate in candidate_name:
+            #candidate_votes.append(candidate_name.count(candidate))     
 
         
         
@@ -36,22 +36,15 @@ with open(election_csv) as csv_file:
 
 
 
-
-                
-            
-        
-       
-       
 
     print("Election Results")
     print("-----------------------------")     
     print(f'Total Votes: {row_count}')
     print("------------------------------")
     print(candidates) 
-    print(candidate_votes)
+    #print(candidate_votes)
 
-     
-    #print("Winner: Khan")
+   
 
         
 
