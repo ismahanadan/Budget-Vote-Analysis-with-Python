@@ -1,4 +1,6 @@
-# python-challenge- PyBank
+# python-challenge
+
+PyBank
  Create a Python script for analyzing the financial records of your company. Dataset to be used is called budget_data.csv. The dataset is composed of two columns: Date and Profit/Losses.
 
 
@@ -19,7 +21,8 @@ The greatest increase in profits (date and amount) over the entire period
 
 The greatest decrease in losses (date and amount) over the entire period
 
-#python-challeng-PyPoll
+
+PyPoll
 The dataset is composed of three columns: Voter ID, County, and Candidate.
 create a Python script that analyzes the votes and calculates each of the following:
 
