@@ -1,9 +1,11 @@
 # python-challenge
-<<<<<<< HEAD
+ HEAD
 =======
 
 PyBank
- Create a Python script for analyzing the financial records of your company. Dataset to be used is called budget_data.csv. The dataset is composed of two columns: Date and Profit/Losses.
+
+
+Create a Python script for analyzing the financial records of your company. Dataset to be used is called budget_data.csv. The dataset is composed of two columns: Date and Profit/Losses.
 
 
 Create a Python script that analyzes the records to calculate each of the following:
