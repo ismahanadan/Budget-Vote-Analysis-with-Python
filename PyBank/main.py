@@ -34,7 +34,6 @@ print(f"Greatest Decrease in Revenue: {date[revenue_change.index(min(revenue_cha
 with  open("Output.txt", "w") as text_file:
     text_file.write(f"Total Months: {len(date)}")
     text_file.write(f"Total Net Profit/Loss: ${sum(revenue)}")
-    text_file.write("\n")
     text_file.write(f"Average Profit/Loss Change: ${sum(revenue_change)/len(revenue_change)}")
     text_file.write("\n")
     text_file.write(f"Greatest Increase in Revenue: {date[revenue_change.index(max(revenue_change))+1]} (${max(revenue_change)})")
