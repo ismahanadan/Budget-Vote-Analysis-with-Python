@@ -23,7 +23,7 @@ with open(budget_csv) as csv_file:
     
 
 print("Financial Analysis")
-print("----------------------------")
+print("-------------------------------------------------")
 print(f"Total Months: {len(date)}")
 print(f"Total Net Profit/Loss: ${sum(revenue)}")
 print(f"Average Profit/Loss Change: ${sum(revenue_change) / len(date)}")
@@ -31,5 +31,16 @@ print(f"Greatest Increase in Revenue: {date[revenue_change.index(max(revenue_cha
 print(f"Greatest Decrease in Revenue: {date[revenue_change.index(min(revenue_change))+1]} (${min(revenue_change)})")
 
 #To export a text file with the results
+with  open("Output.txt", "w") as text_file:
+    text_file.write(f"Total Months: {len(date)}")
+    text_file.write(f"Total Net Profit/Loss: ${sum(revenue)}")
+    text_file.write("\n")
+    text_file.write(f"Average Profit/Loss Change: ${sum(revenue_change)/len(revenue_change)}")
+    text_file.write("\n")
+    text_file.write(f"Greatest Increase in Revenue: {date[revenue_change.index(max(revenue_change))+1]} (${max(revenue_change)})")
+    text_file.write("\n")
+    text_file.write(f"Greatest Decrease in Revenue: {date[revenue_change.index(min(revenue_change))+1]} (${min(revenue_change)})\n")
+#This closes file
+    text_file.close() 
 
 
