@@ -15,14 +15,16 @@ with open(election_csv) as csv_file:
     #print(f"Header: {csv_header}")
     row_count = 0
     votes = []
+    candidates = []
+    candidate_votes = []
     # Read through each row of data after the header to get total vote count
     for row in csv_reader:
         row_count += 1
         votes = row[0]
         candidates = row[2]
-        candidate_name = []
+        candidate_name = row[2]
     #Sort individual candidates in the list of candidates
-    for candidate_name  in candidates:
+    for candidate in candidate_name:
         if candidate_name not in candidates:
             candidates.append(candidate_name)
        
@@ -36,11 +38,13 @@ with open(election_csv) as csv_file:
 
 
     print("Election Results")
-    print("-----------------------------")     
+
+    print("-----------------------------") 
+        
     print(f'Total Votes: {row_count}')
     print("------------------------------")
     print(f"candidate_names") 
-    #print(f'Winner: {candidates[candidate_votes.index(max(candidate_votes))]}')
+   
 
 #To export a text file with the results
 with  open("ByPoll_output.txt", "w") as text_file:
