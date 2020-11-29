@@ -43,7 +43,7 @@ with open(election_csv) as csv_file:
     print(f'Total Votes: {row_count}')
     print("------------------------------")
     print(candidates) 
-    print(f'candidate_votes[candidate_name]' + 1)
+    print(f"")
 
    
 
