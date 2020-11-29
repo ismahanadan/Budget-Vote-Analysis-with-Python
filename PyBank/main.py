@@ -20,7 +20,7 @@ with open(budget_csv) as csv_file:
     #to calculate profit/loss change and the average.  
     for row in range(1,len(revenue)):
         revenue_change.append(revenue[row]- revenue[row-1])
-    print(f"Greatest Increase in Profits: {date[revenue_change.index(max(revenue_change)) +1]} ({max(revenue_change)}) \n")
+    
 
 
 
@@ -36,7 +36,8 @@ print("----------------------------")
 print(f"Total Months: {len(date)}")
 print(f"Total Net Profit/Loss: ${sum(revenue)}")
 print(f"Average Profit/Loss Change: ${sum(revenue_change) / len(date)}")
-
+print(f"Greatest Increase in Revenue: {date[revenue_change.index(max(revenue_change))+1]} (${max(revenue_change)})")
+print(f"Greatest Decrease in Revenue: {date[revenue_change.index(min(revenue_change))+1]} (${min(revenue_change)})")
 
 
 
