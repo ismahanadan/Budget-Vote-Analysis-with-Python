@@ -31,7 +31,7 @@ print(f"Greatest Increase in Revenue: {date[revenue_change.index(max(revenue_cha
 print(f"Greatest Decrease in Revenue: {date[revenue_change.index(min(revenue_change))+1]} (${min(revenue_change)})")
 
 #To export a text file with the results
-with  open("Output.txt", "w") as text_file:
+with  open("ByBank_output.txt", "w") as text_file:
     text_file.write(f"Total Months: {len(date)}")
     text_file.write(f"Total Net Profit/Loss: ${sum(revenue)}")
     text_file.write(f"Average Profit/Loss Change: ${sum(revenue_change)/len(revenue_change)}")
