@@ -22,15 +22,6 @@ with open(budget_csv) as csv_file:
         revenue_change.append(revenue[row]- revenue[row-1])
     
 
-
-
- 
-
-
-
-
-
-
 print("Financial Analysis")
 print("----------------------------")
 print(f"Total Months: {len(date)}")
@@ -39,5 +30,6 @@ print(f"Average Profit/Loss Change: ${sum(revenue_change) / len(date)}")
 print(f"Greatest Increase in Revenue: {date[revenue_change.index(max(revenue_change))+1]} (${max(revenue_change)})")
 print(f"Greatest Decrease in Revenue: {date[revenue_change.index(min(revenue_change))+1]} (${min(revenue_change)})")
 
+#To export a text file with the results
 
 
