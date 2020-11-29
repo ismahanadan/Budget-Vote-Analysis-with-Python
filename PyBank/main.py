@@ -4,7 +4,7 @@ import csv
 
 budget_csv = '/Users/ismahanadan/Desktop/python-challenge/PyBank/budget_data.csv'
 
-#Define for list
+#Define variables for list 
 date = []
 revenue = []
 revenue_change = []
