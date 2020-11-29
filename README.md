@@ -23,6 +23,8 @@ The greatest decrease in losses (date and amount) over the entire period
 
 
 PyPoll
+
+
 The dataset is composed of three columns: Voter ID, County, and Candidate.
 create a Python script that analyzes the votes and calculates each of the following:
 
