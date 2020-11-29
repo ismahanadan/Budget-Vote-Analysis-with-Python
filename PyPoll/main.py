@@ -43,7 +43,12 @@ with open(election_csv) as csv_file:
     #print(f"candidate") 
     #print(f"")
 
-   
+#To export a text file with the results
+with  open("ByPoll_output.txt", "w") as text_file:
+    text_file.write(f"Total Votes: {row_count}")  
+
+    text_file.close() 
+
 
         
 
